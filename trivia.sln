@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trivia", "trivia\trivia.csproj", "{9ED3C5DF-D81E-4183-BA68-4F29A4C8EB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trivia.Tests", "trivia.Tests\trivia.Tests.csproj", "{7EEF95BF-12BD-47FD-BD61-B5EAB1D6445D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trivia.DataModel", "DataModel\trivia.DataModel.csproj", "{F2A0B71F-8528-44F5-896A-B4597D5D0E69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ED3C5DF-D81E-4183-BA68-4F29A4C8EB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED3C5DF-D81E-4183-BA68-4F29A4C8EB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED3C5DF-D81E-4183-BA68-4F29A4C8EB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED3C5DF-D81E-4183-BA68-4F29A4C8EB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EEF95BF-12BD-47FD-BD61-B5EAB1D6445D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EEF95BF-12BD-47FD-BD61-B5EAB1D6445D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EEF95BF-12BD-47FD-BD61-B5EAB1D6445D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EEF95BF-12BD-47FD-BD61-B5EAB1D6445D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
