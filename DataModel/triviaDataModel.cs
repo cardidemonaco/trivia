@@ -37,12 +37,12 @@ namespace Trivia.DataModel
         protected override void Seed(TriviaDataModel context)
         {
             context.Question.Add(new Question { QuestionText = "What is 2 + 2?" });
-            context.Question.Add(new Question { QuestionText = "Who was the Chief Justice of the Michigan Supreme Court on December 1, 2017?" });
-            context.Question.Add(new Question { QuestionText = "Who was the Chief Judge of the Michigan Court of Appeals on December 1, 2017?" });
-            context.Question.Add(new Question { QuestionText = "Where is the Michigan Hall of Justice? (2017)" });
-            context.Question.Add(new Question { QuestionText = "How many Districts are in the Michigan Court of Appeals? (2017)" });
-            context.Question.Add(new Question { QuestionText = "How many Judges are on the Michigan Court of Appeals (2017)?" });
-            context.Question.Add(new Question { QuestionText = "How many Justice are on the Michigan Supreme Court? (2017)" });
+            context.Question.Add(new Question { QuestionText = "Who is the Chief Justice of the Michigan Supreme Court?" });
+            context.Question.Add(new Question { QuestionText = "Who is the Chief Judge of the Michigan Court of Appeals?" });
+            context.Question.Add(new Question { QuestionText = "Where is the Michigan Hall of Justice?" });
+            context.Question.Add(new Question { QuestionText = "How many Districts are in the Michigan Court of Appeals?" });
+            context.Question.Add(new Question { QuestionText = "How many Judges are on the Michigan Court of Appeals?" });
+            context.Question.Add(new Question { QuestionText = "How many Justices are on the Michigan Supreme Court?" });
         }
     }
 }
