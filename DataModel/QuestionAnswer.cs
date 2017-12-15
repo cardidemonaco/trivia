@@ -18,5 +18,6 @@ namespace Trivia.DataModel
         [Column(Order = 2)]
         public int AnswerId { get; set; }
         public Answer Answer { get; set; }
+        public bool CorrectAnswer { get; set; }
     }
 }

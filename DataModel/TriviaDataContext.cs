@@ -32,9 +32,9 @@ namespace Trivia.DataModel
         protected override void Seed(TriviaDataContext context)
         {
             //Category table
-            context.Category.Add(new Category { CategoryName = "Miscellaneous" });
-            context.Category.Add(new Category { CategoryName = "Government" });
-            context.Category.Add(new Category { CategoryName = "Technology" });
+            context.Category.Add(new Category { CategoryName = "Miscellaneous" }); //1
+            context.Category.Add(new Category { CategoryName = "Government" }); //2
+            context.Category.Add(new Category { CategoryName = "Technology" }); //3
 
             //Question table
             context.Question.Add(new Question { QuestionText = "What is 2 + 2?" });
@@ -54,6 +54,17 @@ namespace Trivia.DataModel
             context.QuestionCategory.Add(new QuestionCategory { CategoryId = 2, QuestionId = 6 });
             context.QuestionCategory.Add(new QuestionCategory { CategoryId = 2, QuestionId = 7 });
 
+            //Answer table
+            context.Answer.Add(new Answer { AnswerText = "4" }); //1
+            context.Answer.Add(new Answer { AnswerText = "3" }); //2
+            context.Answer.Add(new Answer { AnswerText = "5" }); //3
+            context.Answer.Add(new Answer { AnswerText = "Justice Stephen Markman" }); //4
+
+            //Question Answer table
+            context.QuestionAnswer.Add(new QuestionAnswer { QuestionId = 1, AnswerId = 1, CorrectAnswer = true });
+            context.QuestionAnswer.Add(new QuestionAnswer { QuestionId = 1, AnswerId = 2, CorrectAnswer = false });
+            context.QuestionAnswer.Add(new QuestionAnswer { QuestionId = 1, AnswerId = 3, CorrectAnswer = false });
+            context.QuestionAnswer.Add(new QuestionAnswer { QuestionId = 2, AnswerId = 4, CorrectAnswer = true });
         }
     }
 }
