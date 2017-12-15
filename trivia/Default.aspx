@@ -14,14 +14,16 @@
                 <asp:GridView ID="gvQuestions" runat="server"></asp:GridView>
             </p>
                 
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
         </div>
         <div class="col-md-4">
             <h2>Add a Question</h2>
             <p>
                 &nbsp;<asp:TextBox ID="txtQuestion" runat="server" TextMode="MultiLine" Width="100%"></asp:TextBox>
+            </p>
+            <p>
+                Category
+                <asp:DropDownList ID="ddlCategory" runat="server">
+                </asp:DropDownList>
             </p>
             <p>
                 &nbsp;<asp:Button ID="btnQuestionAdd" runat="server" OnClick="btnQuestionAdd_Click" Text="Submit Question!" />

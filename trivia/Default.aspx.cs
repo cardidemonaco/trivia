@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -27,9 +25,27 @@ namespace trivia
 
         private void UpdateScreen()
         {
-            gvQuestions.DataSource = (from q in tdm.Question
-                                      select q.QuestionText).ToList();
+            //Update Drop-Down List with Categories
+            var queryCategories =
+                tdm.Category
+                    .Select(c => new { c.CategoryId, c.CategoryName });
+            ddlCategory.DataSource = queryCategories.ToList();
+            ddlCategory.DataValueField = "CategoryId";
+            ddlCategory.DataTextField = "CategoryName";
+            ddlCategory.DataBind();
+
+
+            //Update GridView with Questions
+            var queryQuestions =
+                (from q in tdm.Question
+                 select q);
+            gvQuestions.DataSource = queryQuestions.ToList();
             gvQuestions.DataBind();
+        }
+
+        private void ClearFields()
+        {
+            txtQuestion.Text = "";
         }
     }
 }
