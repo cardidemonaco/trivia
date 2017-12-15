@@ -12,5 +12,7 @@ namespace Trivia.DataModel
         [Key]
         public int QuestionId { get; set; }
         public string QuestionText { get; set; }
+        public DateTime? QuestionDateStart { get; set; }
+        public DateTime? QuestionDateEnd { get; set; }
     }
 }

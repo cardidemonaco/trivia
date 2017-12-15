@@ -7,3 +7,13 @@ C:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.xml
 C:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.SqlServer.xml
 C:\GitHub\trivia\DataModel\obj\Debug\DataModel.dll
 C:\GitHub\trivia\DataModel\obj\Debug\DataModel.pdb
+E:\GitHub\trivia\DataModel\bin\Debug\DataModel.dll.config
+E:\GitHub\trivia\DataModel\bin\Debug\DataModel.dll
+E:\GitHub\trivia\DataModel\bin\Debug\DataModel.pdb
+E:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.dll
+E:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.xml
+E:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitHub\trivia\DataModel\obj\Debug\trivia.DataModel.csprojResolveAssemblyReference.cache
+E:\GitHub\trivia\DataModel\obj\Debug\DataModel.dll
+E:\GitHub\trivia\DataModel\obj\Debug\DataModel.pdb
