@@ -18,7 +18,7 @@
         <div class="col-md-4">
             <h2>Add a Question</h2>
             <p>
-                &nbsp;<asp:TextBox ID="txtQuestion" runat="server" TextMode="MultiLine" Width="100%"></asp:TextBox>
+                <asp:TextBox ID="txtQuestion" runat="server" TextMode="MultiLine" Width="100%"></asp:TextBox>
             </p>
             <p>
                 Category
@@ -30,9 +30,13 @@
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Nothing in this column yet...</h2>
+            <h2>Add a Category</h2>
             <p>
-                Eventually will add something here...</p>
+                <asp:TextBox ID="txtCategory" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Button ID="btnCategoryAdd" runat="server" OnClick="btnCategoryAdd_Click" Text="Submit a Category!" />
+            </p>
         </div>
     </div>
 

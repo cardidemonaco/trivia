@@ -23,12 +23,21 @@ namespace trivia
             UpdateScreen();
         }
 
+        protected void btnCategoryAdd_Click(object sender, EventArgs e)
+        {
+            Category c = new Category() { CategoryName = txtCategory.Text };
+            tdm.Category.Add(c);
+            tdm.SaveChanges();
+            UpdateScreen();
+        }
+
         private void UpdateScreen()
         {
             //Update Drop-Down List with Categories
             var queryCategories =
                 tdm.Category
-                    .Select(c => new { c.CategoryId, c.CategoryName });
+                    .Select(c => new { c.CategoryId, c.CategoryName })
+                    .OrderBy(c => c.CategoryName);
             ddlCategory.DataSource = queryCategories.ToList();
             ddlCategory.DataValueField = "CategoryId";
             ddlCategory.DataTextField = "CategoryName";
@@ -37,8 +46,8 @@ namespace trivia
 
             //Update GridView with Questions
             var queryQuestions =
-                (from q in tdm.Question
-                 select q);
+                tdm.Question
+                    .Select(q => new { q.QuestionText });
             gvQuestions.DataSource = queryQuestions.ToList();
             gvQuestions.DataBind();
         }
@@ -47,5 +56,7 @@ namespace trivia
         {
             txtQuestion.Text = "";
         }
+
+
     }
 }
