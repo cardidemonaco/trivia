@@ -72,7 +72,6 @@ E:\GitHub\trivia\trivia.Tests\bin\Debug\EntityFramework.dll
 E:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 E:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 E:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.pdb
-E:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 E:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.Owin.xml
 E:\GitHub\trivia\trivia.Tests\bin\Debug\System.Web.Optimization.xml
 E:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
