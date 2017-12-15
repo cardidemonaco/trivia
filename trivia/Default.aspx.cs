@@ -11,7 +11,7 @@ namespace trivia
 {
     public partial class _Default : Page
     {
-        private TriviaDataModel tdm = new TriviaDataModel();
+        private TriviaDataContext tdm = new TriviaDataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
             UpdateScreen();

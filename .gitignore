@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+DataModel/bin/Debug/DataModel.dll
+DataModel/bin/Debug/DataModel.dll
+DataModel/bin/Debug/DataModel.pdb
+trivia.Tests/bin/Debug/DataModel.dll
+*.pdb
