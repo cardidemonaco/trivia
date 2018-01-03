@@ -40,6 +40,15 @@ namespace trivia {
         protected global::System.Web.UI.WebControls.CheckBox cbAnswer1;
         
         /// <summary>
+        /// fuAnswer1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuAnswer1;
+        
+        /// <summary>
         /// txtAnswer2 control.
         /// </summary>
         /// <remarks>
@@ -92,5 +101,14 @@ namespace trivia {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvCurrentAnswers;
+        
+        /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
     }
 }

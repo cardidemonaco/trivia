@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -41,6 +42,7 @@ namespace trivia
                 //Save each Answer 
                 if (txtAnswer1.Text != "")
                 {
+                    //Add Answer text to database...
                     Answer a1 = new Answer() { AnswerText = txtAnswer1.Text };
                     tdm.Answer.Add(a1);
 
@@ -51,6 +53,10 @@ namespace trivia
                         CorrectAnswer = cbAnswer1.Checked
                     };
                     tdm.QuestionAnswer.Add(qa1);
+
+                    //Add Documentation to file system...
+                    //File.Copy(fuAnswer1.FileName, "/Documentation/" + fuAnswer1.FileName);
+                    fuAnswer1.SaveAs(Request.PhysicalApplicationPath + @"\Documentation\" + fuAnswer1.FileName);
                 }
 
                 if (txtAnswer2.Text != "")
@@ -81,9 +87,9 @@ namespace trivia
                     tdm.QuestionAnswer.Add(qa3);
                 }
             }
-            catch
+            catch (Exception ex)
             {
-
+                lblError.Text = ex.Message;
             }
             finally
             {

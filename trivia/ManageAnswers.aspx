@@ -12,12 +12,18 @@
     <strong>Create Potential Answers</strong></p>
 <p>
     <asp:TextBox ID="txtAnswer1" runat="server"></asp:TextBox>
-&nbsp;<asp:CheckBox ID="cbAnswer1" runat="server" Text="This is a correct answer" />
+&nbsp;<asp:CheckBox ID="cbAnswer1" runat="server" Text="This is a correct answer" /><br />
+    <asp:FileUpload ID="fuAnswer1" runat="server" />
+    
 </p>
+    <p>
+        &nbsp;</p>
 <p>
     <asp:TextBox ID="txtAnswer2" runat="server"></asp:TextBox>
 &nbsp;<asp:CheckBox ID="cbAnswer2" runat="server" Text="This is a correct answer" />
 </p>
+    <p>
+        &nbsp;</p>
 <p>
     <asp:TextBox ID="txtAnswer3" runat="server"></asp:TextBox>
 &nbsp;<asp:CheckBox ID="cbAnswer3" runat="server" Text="This is a correct answer" />
@@ -32,6 +38,9 @@
     <p>
         <asp:GridView ID="gvCurrentAnswers" runat="server">
         </asp:GridView>
+</p>
+    <p>
+        <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
 </p>
 <p>
     &nbsp;</p>
