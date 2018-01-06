@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trivia.Tests", "trivia.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trivia.DataModel", "DataModel\trivia.DataModel.csproj", "{F2A0B71F-8528-44F5-896A-B4597D5D0E69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trivia.BusinessLogic", "trivia.BusinessLogic\trivia.BusinessLogic.csproj", "{291E1FDB-0BC7-4626-89E2-04FE4346D359}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2A0B71F-8528-44F5-896A-B4597D5D0E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291E1FDB-0BC7-4626-89E2-04FE4346D359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291E1FDB-0BC7-4626-89E2-04FE4346D359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291E1FDB-0BC7-4626-89E2-04FE4346D359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291E1FDB-0BC7-4626-89E2-04FE4346D359}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

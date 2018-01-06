@@ -1,0 +1,12 @@
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\trivia.BusinessLogic.dll.config
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\trivia.BusinessLogic.dll
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\trivia.BusinessLogic.pdb
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\DataModel.dll
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\DataModel.pdb
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\GitHub\trivia\trivia.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\trivia\trivia.BusinessLogic\obj\Debug\trivia.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\GitHub\trivia\trivia.BusinessLogic\obj\Debug\trivia.BusinessLogic.dll
+C:\GitHub\trivia\trivia.BusinessLogic\obj\Debug\trivia.BusinessLogic.pdb

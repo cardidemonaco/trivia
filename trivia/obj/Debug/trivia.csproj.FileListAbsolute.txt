@@ -134,3 +134,5 @@ E:\GitHub\trivia\trivia\bin\Microsoft.Owin.Security.OAuth.xml
 E:\GitHub\trivia\trivia\obj\Debug\trivia.csprojResolveAssemblyReference.cache
 E:\GitHub\trivia\trivia\obj\Debug\trivia.dll
 E:\GitHub\trivia\trivia\obj\Debug\trivia.pdb
+C:\GitHub\trivia\trivia\bin\trivia.BusinessLogic.dll
+C:\GitHub\trivia\trivia\bin\trivia.BusinessLogic.pdb

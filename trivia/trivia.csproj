@@ -178,6 +178,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="ManageAnswers.aspx" />
+    <Content Include="Default.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -208,7 +209,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
+    <Content Include="ManageQuestions.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
@@ -336,12 +337,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="ManageQuestions.aspx.cs">
+      <DependentUpon>ManageQuestions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="ManageQuestions.aspx.designer.cs">
+      <DependentUpon>ManageQuestions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -377,6 +378,13 @@
     <Compile Include="ManageAnswers.aspx.designer.cs">
       <DependentUpon>ManageAnswers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -386,6 +394,10 @@
     <ProjectReference Include="..\DataModel\trivia.DataModel.csproj">
       <Project>{f2a0b71f-8528-44f5-896a-b4597d5d0e69}</Project>
       <Name>trivia.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\trivia.BusinessLogic\trivia.BusinessLogic.csproj">
+      <Project>{291e1fdb-0bc7-4626-89e2-04fe4346d359}</Project>
+      <Name>trivia.BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
