@@ -61,7 +61,6 @@ C:\GitHub\trivia\trivia\bin\Microsoft.Owin.Security.Google.xml
 C:\GitHub\trivia\trivia\bin\Microsoft.Owin.Security.Twitter.xml
 C:\GitHub\trivia\trivia\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\GitHub\trivia\trivia\bin\Microsoft.Owin.Security.OAuth.xml
-C:\GitHub\trivia\trivia\obj\Debug\trivia.csprojResolveAssemblyReference.cache
 C:\GitHub\trivia\trivia\obj\Debug\trivia.dll
 C:\GitHub\trivia\trivia\obj\Debug\trivia.pdb
 C:\GitHub\trivia\trivia\bin\DataModel.dll
@@ -136,3 +135,8 @@ E:\GitHub\trivia\trivia\obj\Debug\trivia.dll
 E:\GitHub\trivia\trivia\obj\Debug\trivia.pdb
 C:\GitHub\trivia\trivia\bin\trivia.BusinessLogic.dll
 C:\GitHub\trivia\trivia\bin\trivia.BusinessLogic.pdb
+C:\GitHub\trivia\trivia\bin\DataModel.dll.config
+C:\GitHub\trivia\trivia\bin\trivia.BusinessLogic.dll.config
+C:\GitHub\trivia\trivia\obj\Debug\trivia.csprojAssemblyReference.cache
+C:\GitHub\trivia\trivia\obj\Debug\trivia.csproj.CoreCompileInputs.cache
+C:\GitHub\trivia\trivia\obj\Debug\trivia.csproj.CopyComplete

@@ -17,4 +17,6 @@ E:\GitHub\trivia\DataModel\bin\Debug\EntityFramework.SqlServer.xml
 E:\GitHub\trivia\DataModel\obj\Debug\DataModel.dll
 E:\GitHub\trivia\DataModel\obj\Debug\DataModel.pdb
 E:\GitHub\trivia\DataModel\obj\Debug\trivia.DataModel.csprojResolveAssemblyReference.cache
-C:\GitHub\trivia\DataModel\obj\Debug\trivia.DataModel.csprojResolveAssemblyReference.cache
+C:\GitHub\trivia\DataModel\obj\Debug\trivia.DataModel.csprojAssemblyReference.cache
+C:\GitHub\trivia\DataModel\obj\Debug\trivia.DataModel.csproj.CoreCompileInputs.cache
+C:\GitHub\trivia\DataModel\obj\Debug\trivia.DataModel.csproj.CopyComplete

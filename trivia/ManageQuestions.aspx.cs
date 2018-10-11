@@ -12,9 +12,19 @@ namespace trivia
     {
         private TriviaDataContext tdm = new TriviaDataContext();
         private QuizController qc = new QuizController();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            UpdateScreen();
+            if (!IsPostBack)
+            {
+                //Update Drop-Down List with Categories                      
+                ddlCategory.DataSource = qc.GetCategories().ToList();
+                ddlCategory.DataValueField = "CategoryId";
+                ddlCategory.DataTextField = "CategoryName";
+                ddlCategory.DataBind();
+
+                UpdateScreen();
+            }  
         }
 
         protected void btnQuestionAdd_Click(object sender, EventArgs e)
@@ -35,17 +45,20 @@ namespace trivia
 
         private void UpdateScreen()
         {
-            //Update Drop-Down List with Categories                      
-            ddlCategory.DataSource = qc.GetCategories().ToList();
-            ddlCategory.DataValueField = "CategoryId";
-            ddlCategory.DataTextField = "CategoryName";
-            ddlCategory.DataBind();
-
+           
 
             //Update GridView with Questions
             var queryQuestions =
                 tdm.Question
-                    .Select(q => new { q.QuestionText });
+                    .Join(tdm.QuestionCategory, qc => qc.QuestionId, q => q.QuestionId, (qc, q) => 
+                    new
+                    {
+                        qcID = qc.QuestionId,
+                        qID = q.QuestionId,
+                        qText = qc.QuestionText,
+                        qCategory = q.CategoryId
+                    })
+                    .Where(a => a.qCategory.ToString() == ddlCategory.SelectedValue);
             gvQuestions.DataSource = queryQuestions.ToList();
             gvQuestions.DataBind();
         }
@@ -55,6 +68,9 @@ namespace trivia
             txtQuestion.Text = "";
         }
 
-
+        protected void ddlCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateScreen();
+        }
     }
 }

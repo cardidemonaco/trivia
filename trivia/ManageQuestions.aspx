@@ -17,7 +17,7 @@
             </p>
             <p>
                 Category
-                <asp:DropDownList ID="ddlCategory" runat="server">
+                <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged">
                 </asp:DropDownList>
             </p>
             <p>

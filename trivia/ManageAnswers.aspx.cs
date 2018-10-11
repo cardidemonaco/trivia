@@ -14,10 +14,16 @@ namespace trivia
     public partial class ManageAnswers : System.Web.UI.Page
     {
         private TriviaDataContext tdm = new TriviaDataContext();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                ddlCategory.DataSource = tdm.Category.ToList();
+                ddlCategory.DataTextField = "CategoryName";
+                ddlCategory.DataValueField = "CategoryID";
+                ddlCategory.DataBind();
+
                 UpdateScreen();
             }
         }
@@ -100,6 +106,24 @@ namespace trivia
             }
         }
 
+        protected void ddlCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var Questions = tdm.Question
+                .Join(tdm.QuestionCategory, q => q.QuestionId, qc => qc.QuestionId, (q, qc) => new
+                {
+                    q.QuestionId,
+                    q.QuestionText,
+                    qc.CategoryId
+                })
+                .Where(a => a.CategoryId.ToString() == ddlCategory.SelectedValue);
+
+        }
+
+        protected void gvPotentialAnswers_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            
+        }
+
         private void UpdateScreen()
         {
             //Update GridView with Questions
@@ -145,7 +169,5 @@ namespace trivia
             cbAnswer2.Checked = false;
             cbAnswer3.Checked = false;
         }
-
-
     }
 }

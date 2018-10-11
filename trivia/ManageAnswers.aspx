@@ -4,6 +4,11 @@
     <div class="row">
         <div class="col-md-4">
     
+            <h2>Pick a Category</h2>
+            <p>
+                <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged">
+                </asp:DropDownList>
+            </p>
             <h2>Pick a Question</h2>
             <p>
                 <asp:DropDownList ID="ddlQuestions" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlQuestions_SelectedIndexChanged">
@@ -12,7 +17,7 @@
 
             <h2>Create Potential Answers</h2>
             <p>
-                <asp:GridView ID="gvPotentialAnswers" runat="server" AutoGenerateColumns="False">
+                <asp:GridView ID="gvPotentialAnswers" runat="server" AutoGenerateColumns="False" OnRowDataBound="gvPotentialAnswers_RowDataBound">
                     <Columns>
                         <asp:TemplateField HeaderText="Answer">
                             <EditItemTemplate>
