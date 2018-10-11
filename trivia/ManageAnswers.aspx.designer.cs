@@ -22,6 +22,15 @@ namespace trivia {
         protected global::System.Web.UI.WebControls.DropDownList ddlQuestions;
         
         /// <summary>
+        /// gvPotentialAnswers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvPotentialAnswers;
+        
+        /// <summary>
         /// txtAnswer1 control.
         /// </summary>
         /// <remarks>

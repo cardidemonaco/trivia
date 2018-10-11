@@ -11,7 +11,11 @@
 
             <h2>Pick a Quiz</h2>
 
-            <asp:GridView ID="gvQuizCategories" runat="server"></asp:GridView>
+            <asp:GridView ID="gvQuizCategories" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="CategoryName" HeaderText="Quiz Category" />
+                </Columns>
+            </asp:GridView>
 
         </div>
         <div class="col-md-4">

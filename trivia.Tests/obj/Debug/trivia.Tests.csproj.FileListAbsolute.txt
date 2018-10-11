@@ -86,3 +86,5 @@ E:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 E:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.csprojResolveAssemblyReference.cache
 E:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.dll
 E:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.pdb
+C:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.BusinessLogic.dll
+C:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.BusinessLogic.pdb

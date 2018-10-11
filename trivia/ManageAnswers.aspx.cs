@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -56,7 +57,8 @@ namespace trivia
 
                     //Add Documentation to file system...
                     //File.Copy(fuAnswer1.FileName, "/Documentation/" + fuAnswer1.FileName);
-                    fuAnswer1.SaveAs(Request.PhysicalApplicationPath + @"\Documentation\" + fuAnswer1.FileName);
+                    if (fuAnswer1.FileName != "")
+                        fuAnswer1.SaveAs(Request.PhysicalApplicationPath + @"\Documentation\" + fuAnswer1.FileName);
                 }
 
                 if (txtAnswer2.Text != "")
@@ -113,6 +115,25 @@ namespace trivia
             //Insert dummy record in drop-down list
             ListItem li = new ListItem() { Value = "0", Text = "-- SELECT A QUESTION --" };
             ddlQuestions.Items.Insert(0, li);
+
+            //Add 3 blank rows to the DataTable (allow "add" button for more)
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Answer");
+            dt.Columns.Add("Files");
+            dt.Columns.Add("CorrectAnswer");
+
+            for (int i=0;i<3;i++)
+            {
+                DataRow dtRow = dt.NewRow();
+                dt.Rows.Add(dtRow);
+            }
+
+            //Set Answers GridView to edit mode immediately
+            gvPotentialAnswers.EditIndex = 0;
+
+            //Bind data
+            gvPotentialAnswers.DataSource = dt;
+            gvPotentialAnswers.DataBind();
         }
 
         private void ClearScreen()
