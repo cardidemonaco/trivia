@@ -37,7 +37,6 @@ C:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\GitHub\trivia\trivia.Tests\bin\Debug\EntityFramework.xml
 C:\GitHub\trivia\trivia.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
-C:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.csprojResolveAssemblyReference.cache
 C:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.dll
 C:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.pdb
 C:\GitHub\trivia\trivia.Tests\bin\Debug\DataModel.dll
@@ -88,3 +87,9 @@ E:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.dll
 E:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.pdb
 C:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.BusinessLogic.dll
 C:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.BusinessLogic.pdb
+C:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.dll.config
+C:\GitHub\trivia\trivia.Tests\bin\Debug\DataModel.dll.config
+C:\GitHub\trivia\trivia.Tests\bin\Debug\trivia.BusinessLogic.dll.config
+C:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.csprojAssemblyReference.cache
+C:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.csproj.CoreCompileInputs.cache
+C:\GitHub\trivia\trivia.Tests\obj\Debug\trivia.Tests.csproj.CopyComplete
