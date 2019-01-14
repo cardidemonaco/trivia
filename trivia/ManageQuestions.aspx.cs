@@ -17,7 +17,14 @@ namespace trivia
         {
             if (!IsPostBack)
             {
-                //Update Drop-Down List with Categories                      
+                //Update the drop-down list that shows Questions for
+                //  a particular category
+                ddlCategories.DataSource = qc.GetCategories().ToList();
+                ddlCategories.DataValueField = "CategoryId";
+                ddlCategories.DataTextField = "CategoryName";
+                ddlCategories.DataBind();
+
+                //Update the drop-down list with Categories for adding a Question                      
                 ddlCategory.DataSource = qc.GetCategories().ToList();
                 ddlCategory.DataValueField = "CategoryId";
                 ddlCategory.DataTextField = "CategoryName";
