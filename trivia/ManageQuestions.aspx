@@ -5,6 +5,10 @@
     <div class="row">
         <div class="col-md-4">
             <h2>Questions</h2>
+            <p>Category
+                <asp:DropDownList ID="ddlCategories" runat="server">
+                </asp:DropDownList>
+            </p>
             <p>
                 <asp:GridView ID="gvQuestions" runat="server"></asp:GridView>
             </p>
